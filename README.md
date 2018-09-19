@@ -1,1 +1,1 @@
-# python_data_project_sql
+# Python data project on IPL dataset using MySQL
