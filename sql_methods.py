@@ -1,8 +1,19 @@
 import csv
+import pymysql.cursors
 
 table = 'test_table'
+deliveries_table = 'test_deliveries'
 
-def create_table_populate(csv_path, connection):
+
+def connect_db():
+    return pymysql.connect(host='localhost',
+                           user='kavach',
+                           passwd='zeitgeist13',
+                           db='test_ipldb',
+                           cursorclass=pymysql.cursors.DictCursor)
+
+
+def create_table_populate(csv_path, connection, table_name=table):
     """Method to create table and populate it with values.
 
     Accepts csv file path and connection object.
@@ -21,7 +32,7 @@ def create_table_populate(csv_path, connection):
         headers = next(csv_reader)
         header_sql_string = ""
         for header in headers:
-            header_sql_string += header + " VARCHAR(50), "
+            header_sql_string += header + " VARCHAR(100), "
         """Strip the extra spaces and commas from the ends of the string."""
         header_sql_string = header_sql_string.strip()
         header_sql_string = header_sql_string.strip(',')
@@ -30,13 +41,15 @@ def create_table_populate(csv_path, connection):
         try:
             with connection.cursor() as cursor:
                 """Create table."""
-                sql = "CREATE TABLE " + table + " (" + header_sql_string + ")"
+                sql = "CREATE TABLE " + table_name + " (" + header_sql_string + ")"
+                # print(sql)
                 cursor.execute(sql)
 
                 """Loop to traverse through each row in the .csv file."""
                 for row in csv_reader:
                     insert_sql_string = ""
                     for value in range(len(headers)):
+                        row[value] = row[value].replace("'", "\\'")
                         insert_sql_string += "'" + row[value] + "', "
                     """Strip the extra spaces and commas from the ends of the string."""
                     insert_sql_string = insert_sql_string.strip()
@@ -53,7 +66,7 @@ def create_table_populate(csv_path, connection):
 
                     """Create entry."""
                     sql = "INSERT INTO " + \
-                          table + \
+                          table_name + \
                           " (" + insert_header_sql_string + ") VALUES (" + insert_sql_string + ")"
                     # print(sql)
                     cursor.execute(sql)
@@ -75,3 +88,16 @@ def read_records(query, connection):
         cursor.execute(query)
         result = cursor.fetchall()
     return result
+
+
+def delete_table(connection):
+    """Method to delete test_table from MySQL database.
+
+    :param connection: (pymysql connection object) SQL connector which is used to communicate with MySQL.
+    :return: None
+    """
+    with connection.cursor() as cursor:
+        sql = "DROP TABLE IF EXISTS " + table
+        cursor.execute(sql)
+        sql = "DROP TABLE IF EXISTS " + deliveries_table
+        cursor.execute(sql)

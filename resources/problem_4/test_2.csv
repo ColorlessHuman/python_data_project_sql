@@ -1,0 +1,11 @@
+match_id,inning,batting_team,bowling_team,over,ball,batsman,non_striker,bowler,is_super_over,wide_runs,bye_runs,legbye_runs,noball_runs,penalty_runs,batsman_runs,extra_runs,total_runs,player_dismissed,dismissal_kind,fielder
+1,1,Sunrisers Hyderabad,Royal Challengers Bangalore,12,1,MC Henriques,Yuvraj Singh,S Aravind,0,0,0,0,0,0,1,0,1,,,
+1,2,Royal Challengers Bangalore,Sunrisers Hyderabad,10,4,KM Jadhav,TM Head,MC Henriques,0,0,0,0,0,0,1,0,1,,,
+8,1,Royal Challengers Bangalore,Kings XI Punjab,9,3,Mandeep Singh,AB de Villiers,T Natarajan,0,0,0,0,0,0,1,0,1,,,
+230,2,Kolkata Knight Riders,Mumbai Indians,13,7,BB McCullum,SC Ganguly,CRD Fernando,0,1,0,0,0,0,0,1,1,,,
+585,2,Gujarat Lions,Mumbai Indians,7,3,AJ Finch,SK Raina,HH Pandya,0,1,0,0,0,0,0,1,1,,,
+585,2,Gujarat Lions,Mumbai Indians,7,4,AJ Finch,SK Raina,HH Pandya,0,0,0,1,0,0,0,1,1,,,
+591,2,Sunrisers Hyderabad,Gujarat Lions,15,5,DA Warner,S Dhawan,RA Jadeja,0,0,0,0,0,0,4,0,4,,,
+592,1,Royal Challengers Bangalore,Rising Pune Supergiants,1,1,V Kohli,KL Rahul,I Sharma,0,1,0,0,0,0,0,1,1,,,
+593,1,Delhi Daredevils,Mumbai Indians,15,4,JP Duminy,SV Samson,TG Southee,0,0,0,0,0,0,1,0,1,,,
+593,1,Delhi Daredevils,Mumbai Indians,15,5,SV Samson,JP Duminy,TG Southee,0,1,0,0,0,0,0,1,1,,,

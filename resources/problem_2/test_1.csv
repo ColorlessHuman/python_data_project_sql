@@ -1,0 +1,10 @@
+id,season,city,date,team1,team2,toss_winner,toss_decision,result,dl_applied,winner,win_by_runs,win_by_wickets,player_of_match,venue,umpire1,umpire2,umpire3
+1,2016,Hyderabad,2017-04-05,Sunrisers Hyderabad,Chennai Super Kings,Chennai Super Kings,field,normal,0,Chennai Super Kings,35,0,Yuvraj Singh,"Rajiv Gandhi International Stadium, Uppal",AY Dandekar,NJ Llong,
+2,2016,Pune,2017-04-06,Mumbai Indians,Mumbai Indians,Mumbai Indians,field,normal,0,Mumbai Indians,0,7,SPD Smith,Maharashtra Cricket Association Stadium,A Nand Kishore,S Ravi,
+3,2016,Rajkot,2017-04-07,Gujarat Lions,Mumbai Indians,Mumbai Indians,field,normal,0,Mumbai Indians,0,10,CA Lynn,Saurashtra Cricket Association Stadium,Nitin Menon,CK Nandan,
+4,2016,Indore,2017-04-08,Mumbai Indians,Chennai Super Kings,Chennai Super Kings,field,normal,0,Chennai Super Kings,0,6,GJ Maxwell,Holkar Cricket Stadium,AK Chaudhary,C Shamshuddin,
+5,2016,Bangalore,2017-04-08,Chennai Super Kings,Delhi Daredevils,Chennai Super Kings,bat,normal,0,Chennai Super Kings,15,0,KM Jadhav,M Chinnaswamy Stadium,,,
+6,2017,Hyderabad,2017-04-09,Gujarat Lions,Mumbai Indians,Mumbai Indians,field,normal,0,Mumbai Indians,0,9,Rashid Khan,"Rajiv Gandhi International Stadium, Uppal",A Deshmukh,NJ Llong,
+7,2017,Mumbai,2017-04-09,Kolkata Knight Riders,Mumbai Indians,Mumbai Indians,field,normal,0,Mumbai Indians,0,4,N Rana,Wankhede Stadium,Nitin Menon,CK Nandan,
+8,2017,Indore,2017-04-10,Chennai Super Kings,Chennai Super Kings,Chennai Super Kings,bat,normal,0,Chennai Super Kings,0,8,AR Patel,Holkar Cricket Stadium,AK Chaudhary,C Shamshuddin,
+9,2017,Pune,2017-04-11,Delhi Daredevils,Mumbai Indians,Mumbai Indians,field,normal,0,Mumbai Indians,97,0,SV Samson,Maharashtra Cricket Association Stadium,AY Dandekar,S Ravi,
